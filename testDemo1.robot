@@ -21,12 +21,12 @@ open the browser with the Mortgage payment url
     Go To   https://rahulshettyacademy.com/loginpagePractise/
 
 Fill the login Form
-    Input Text          id:username     rahulshettyacademy
+    Input Text          id:username     rahulshettyacademy            #robot will support only id,css,xpath for ID we can skip name and directly pass the locator
     Input Password      id:password     12345678
     Click Button        signInBtn
 
 wait until it checks and display error message
-    Wait Until Element Is Visible       ${Error_Message_Login}
+    Wait Until Element Is Visible       ${Error_Message_Login}            # for this kind of code we can refer the builtin library and here if we not over write the wait time default is library 5 seconds  
 
 verify error message is correct
    ${result}=   Get Text    ${Error_Message_Login}   #here if you don't use a one tab after the equal it will through error 
