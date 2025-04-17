@@ -17,7 +17,7 @@ Validate UnSuccesful Login        # this like a test heading or parent testcase 
 
 *** Keywords ***
 open the browser with the Mortgage payment url
-    Create Webdriver    Chrome  executable_path=/Users/rahulshetty/Documents/chromedriver
+    Create Webdriver    Chrome  executable_path=/Users/rahulshetty/Documents/chromedriver      #in updated selenium this executable_path step is not required we can skip this path 
     Go To   https://rahulshettyacademy.com/loginpagePractise/
 
 Fill the login Form
