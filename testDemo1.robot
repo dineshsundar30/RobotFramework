@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation   To validate the Login form
+Documentation   To validate the Login form       # this for documanting and we need to use one tab after the keyword
 Library     SeleniumLibrary
 Test Teardown   Close Browser #it will execute after the all test cases
 
@@ -8,7 +8,7 @@ Test Teardown   Close Browser #it will execute after the all test cases
 ${Error_Message_Login}      css:.alert-danger  #double tab
 
 
-*** Test Cases ***
+*** Test Cases ***                # in robot framework test cases is a collection of key words
 Validate UnSuccesful Login
     open the browser with the Mortgage payment url
     Fill the login Form
