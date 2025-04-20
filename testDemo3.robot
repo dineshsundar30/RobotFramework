@@ -19,7 +19,7 @@ Validate Child window Functionality
     Select the link of Child window
     Verify the user is Switched to Child window
     Grab the Email id in the Child Window
-   Switch to Parent window and enter the Email
+    Switch to Parent window and enter the Email
 
 
 *** Keywords ***
@@ -29,6 +29,7 @@ Select the link of Child window
 
 Verify the user is Switched to Child window
     switch window       NEW
+    Sleep               5            # we can prefer sleep after switching into new window insted of verifying few elemeny's is presented 
     Element Text Should Be       css:h1     DOCUMENTS REQUEST
 
 
