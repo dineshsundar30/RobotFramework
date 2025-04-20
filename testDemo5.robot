@@ -10,12 +10,12 @@ Test Template   Validate UnSuccesful Login
 ${Error_Message_Login}      css:.alert-danger
 
 *** Test Cases ***
-Login with user ${username} and password ${password}        xyc     123456
+Login with user ${username} and password ${password}        xyc     123456         #that ${varialbe name} should be match with the csv columns name and xyc and 123 is option if any error that will run
 
 
 *** Keywords ***
 Validate UnSuccesful Login
-    [Arguments]     ${username}     ${password}
+    [Arguments]     ${username}     ${password}            # in csv also that column name should match including that ${} 
     open the browser with the Mortgage payment url
     Fill the login Form    ${username}      ${password}
     wait until it checks and display error message
