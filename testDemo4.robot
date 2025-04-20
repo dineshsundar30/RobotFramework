@@ -2,7 +2,7 @@
 Documentation   To validate the Login form
 Library     SeleniumLibrary
 Test Teardown   Close Browser
-Test Template   Validate UnSuccesful Login
+Test Template   Validate UnSuccesful Login            #for parameterized test we can use this 
 
 
 *** Variables ***
@@ -17,7 +17,7 @@ special characters      @#$             learning
 
 
 *** Keywords ***
-Validate UnSuccesful Login
+Validate UnSuccesful Login                    # we need to declear that in keyword and mark in settings 
     [Arguments]     ${username}     ${password}
     open the browser with the Mortgage payment url
     Fill the login Form    ${username}      ${password}
