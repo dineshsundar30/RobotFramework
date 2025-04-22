@@ -3,11 +3,11 @@ Documentation   To validate the Login form
 Library     SeleniumLibrary
 Library     Collections
 Library     ../customLibraries/Shop.py
-Test Setup      open the browser with the url
-Suite Setup
-Suite Teardown
-Test Teardown   Close Browser session
-Resource        ../PO/Generic.robot
+Test Setup      open the browser with the url  #this will run before every test cases
+Suite Setup          # this will run once before starting of the file 
+Suite Teardown       # this will run once after ending of the file 
+Test Teardown   Close Browser session          #this will run after every test cases
+Resource        ../PO/Generic.robot          #here we change that resource file into generic.robot we can name anythong here
 Resource        ../PO/LandingPage.robot
 Resource        ../PO/ShopPage.robot
 Resource        ../PO/CheckoutPage.robot
@@ -22,7 +22,7 @@ ${country_name}             India
 *** Test Cases ***
 Validate UnSuccesful Login
      [Tags]      SMOKE      REGRESSION
-     LandingPage.Fill the login Form     ${user_name}    ${invalid_password}
+     LandingPage.Fill the login Form     ${user_name}    ${invalid_password}               #here to avoide the conflict we can use that filename that contain the keyword
      LandingPage.wait until Element is located in the page
      LandingPage.verify error message is correct
 
