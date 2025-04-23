@@ -4,7 +4,7 @@
 
 #to run for specfic testcase--> robot -t "validate unsuccessfull login" .   # here t stands for testcase name and . if search the test case in all files or we can use filename insted of . like --> robot -t "validate unsuccessfull login" testDemo1.robot
 
-#to run we can use parctial test name also robot -t "validate*" .
+#to run we can use parctial test name also--> robot -t "validate*" .
 
 #to run bases on tage name we can use the --> robot --include tagename .
 
