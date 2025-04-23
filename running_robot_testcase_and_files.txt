@@ -1,8 +1,14 @@
-# if you want to run all the test file in the foldar you can use robot .  but please not this run as a sequence 
+# if you want to run all the test file in the foldar you can use --> robot .  but please not this run as a sequence 
+
+#for specfic file --> robot filename.robot
+
+#for specfic testcase--> robot -t "validate unsuccessfull login" .   # here t stands for testcase name and . if search the test case in all files or we can use filename insted of . like --> robot -t "validate unsuccessfull login" testDemo1.robot
+
+#we can use parctial test name also robot -t "validate*" .
 
 #if you want to run in parallel we can use Pabot package
 pip install -U robotframework-pabot
 
-now if you run pabot . it will run parallel 
+now if you run--> pabot . it will run parallel 
 
-if you want to run test cases in a one file parallely use pabot --testlevelsplit filename.robot
+if you want to run test cases in a one file parallely use--> pabot --testlevelsplit filename.robot
