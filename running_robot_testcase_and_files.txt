@@ -8,9 +8,28 @@
 
 #to run bases on tage name we can use the --> robot --include tagename .
 
+#to run with multiple tages --> robot --include SMOKEORREGRESSION .  #here OR should be capital same like we can use robot --include SMOKEANDREGRESSION .
+
+#to skip some taged tests we can use --> robot --exclude tagename .
+
+# --> robot --suitr folername .
+here it will run all the files inside that foldar it's similer like robot . but for this we can use only inside the path this we can use it from anywhere
+
+# --> robot --rerunfailed output.xml filename  #it will check the previous failed test's and run that test in that file
+
 #if you want to run in parallel we can use Pabot package
 pip install -U robotframework-pabot
 
 now if you run--> pabot . it will run parallel 
 
 if you want to run test cases in a one file parallely use--> pabot --testlevelsplit filename.robot
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------
+                                                                      commentline argument
+if we need to change any variable in run time we can use --> robot --variable browser_name:firefox filename.robot
+NOTE : this will work in global variable like which is inside ***  variable ***
+
+and aslo we can pass other parameter like 
+robot --variable browser_name:firefox --include smoke filename.robot
+
+
