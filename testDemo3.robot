@@ -43,7 +43,7 @@ Grab the Email id in the Child Window
      @{words_2}=   Split String    ${text_split}
      #0->mentor@rahulshettyacademy.com
      ${email}=      Get From List    ${words_2}    0
-     Set Global Variable         ${email}
+     Set Global Variable         ${email}                #if we need to use one variable in other test, which is declear inside one test we can use this Set Global Variable 
 
 
 Switch to Parent window and enter the Email
