@@ -40,7 +40,7 @@ Grab the Email id in the Child Window
     #1-> mentor@rahulshettyacademy.com with below template to receive response
     ${text_split}=      Get From List       ${words}    1
     log     ${text_split}
-     @{words_2}=   Split String    ${text_split}
+     @{words_2}=   Split String    ${text_split}                   #if we don't give any string for splict it automatically take wightspace for split
      #0->mentor@rahulshettyacademy.com
      ${email}=      Get From List    ${words_2}    0
      Set Global Variable         ${email}                #if we need to use one variable in other test, which is declear inside one test we can use this Set Global Variable 
