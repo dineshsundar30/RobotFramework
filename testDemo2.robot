@@ -89,6 +89,8 @@ Fill the Login Details and Login Form
 
 
 
+[Documentation]  iFrame
+... Select Frame    locator     #here we can pass  (id, name, xpath)
 
 
 
