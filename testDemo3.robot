@@ -52,7 +52,7 @@ Switch to Parent window and enter the Email
     Input Text          id:username     ${email}
 
 
-'''
+[Documentation]
 there are few method here to switch windows
 
 Switch Window    title=New Tab Title
@@ -60,7 +60,7 @@ Switch Window    url=example.com/newpage
 Switch Window    index=1
 Switch Window                                        #by default this will open last windows
 
-'''
+
 
 
 
