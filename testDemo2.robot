@@ -51,7 +51,7 @@ verify error message is correct
    Element Text Should Be       ${Error_Message_Login}      Incorrect username/password.
 
 Verify Card titles in the Shop page
-   @{expectedList} =    Create List     iphone X    Samsung Note 8      Nokia Edge       Blackberry        #for creating the new list only we need to use @ after that we need to use $ 
+   @{expectedList} =    Create List     iphone X    Samsung Note 8      Nokia Edge       Blackberry        #for creating the new list only we need to use @ or $ after that we need to use $ 
    ${elements} =  Get WebElements     css:.card-title
    @{actualList} =   Create List
    FOR  ${element}  IN      @{elements}
