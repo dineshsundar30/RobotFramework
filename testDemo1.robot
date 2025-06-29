@@ -36,6 +36,11 @@ verify error message is correct
 
 
 
+[Documentation]  wait
+... Set Selenium Implicit Wait    10s   #--> Implicit Wait
+... Wait Until Element Is Visible    id:username    10s        #--> Explicit Wait
+... Wait Until Page Contains Element    xpath=//button[text()='Login']    timeout=15s      #--> Explicit Wait
+
 
 
 
