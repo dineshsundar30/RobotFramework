@@ -47,7 +47,7 @@ Grab the Email id in the Child Window
 
 
 Switch to Parent window and enter the Email
-    switch window       MAIN
+    switch window       MAIN                                   # we can move to mail with this
     Title Should Be     LoginPage Practise | Rahul Shetty Academy
     Input Text          id:username     ${email}
 
