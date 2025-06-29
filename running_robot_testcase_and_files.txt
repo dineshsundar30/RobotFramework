@@ -12,7 +12,7 @@
 
 #to skip some taged tests we can use --> robot --exclude tagename .
 
-# --> robot --suitr folername .
+# --> robot --suite folername .
 here it will run all the files inside that foldar it's similer like robot . but for this we can use only inside the path this we can use it from anywhere
 
 # --> robot --rerunfailed output.xml filename  #it will check the previous failed test's and run that test in that file
