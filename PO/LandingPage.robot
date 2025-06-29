@@ -29,7 +29,7 @@ Fill the Login Details and Login Form
 
     Input Text          id:username     rahulshettyacademy
     Input Password      id:password     learning
-    Click Element       css:input[value='user']
+    Click Element       css:input[value='user']            #here we can click the radio button and all the element using this Click Element
     Wait Until Element Is Visible       css:.modal-body
     Click Button        id:okayBtn
     Click Button        id:okayBtn
