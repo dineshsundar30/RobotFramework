@@ -53,7 +53,7 @@ Switch to Parent window and enter the Email
 
 
 [Documentation]
-there are few method here to switch windows
+... there are few method here to switch windows
 
 Switch Window    title=New Tab Title
 Switch Window    url=example.com/newpage
