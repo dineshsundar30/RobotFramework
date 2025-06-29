@@ -6,7 +6,7 @@ from robot.libraries.BuiltIn import BuiltIn
 class Shop:
 
     def __init__(self):
-        self.selLib = BuiltIn().get_library_instance("SeleniumLibrary")
+        self.selLib = BuiltIn().get_library_instance("SeleniumLibrary")    #here we can as any library we want here and assign to the self
 
     @keyword
     def hello_world(self):
