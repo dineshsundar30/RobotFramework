@@ -94,6 +94,13 @@ Fill the Login Details and Login Form
 ... Unselect Frame              #this for Unselect Frame here we don't need to pass anything it will Switches back to the main document from the iFrame.
 
 
+[Documentation]    execute javascript
+... execute javascript window.scrollTo(0,2500)
+... scroll element into view     #xpath://*[@id="content"]/div[2]/div[2]/table[1]/tbody/tr[86]/
+... execute javascript window.scrollTo(0,document.body.scrollHeight)            #end of the page
+... execute javascript window.scrollTo(0,-document.body.scrollHeight)            #starting point
+
+
 
 
 
