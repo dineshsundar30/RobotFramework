@@ -81,7 +81,7 @@ Fill the Login Details and Login Form
     Click Button        id:okayBtn
     Click Button        id:okayBtn
     Wait Until Element Is Not Visible   css:.modal-body
-    Select From List By Value       css:select.form-control       teach
+    Select From List By Value       css:select.form-control       teach            # Dropdown Handling in selenium
     Select Checkbox     terms
     Checkbox Should Be Selected     terms
 
