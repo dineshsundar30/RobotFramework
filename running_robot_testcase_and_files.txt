@@ -21,6 +21,15 @@ here it will run all the files inside that foldar it's similer like robot . but 
 
 #robot --outputdir Results sample_test.robot       --> if you wanted to store the all files in a specfic folder we can use this
 
+'''
+robot -d Output --randomize ALL -i Tag1ORTage2  --loglevel TRACE foldername       
+---> Here -d is to move the output file to directory
+---> --randomize ALL to randomly run the tests
+---> -i Tag1ORTage2 to use tages 
+---> --loglevel TRACE is use to print the see more logs in log.html and it's have 
+INFO,DEBUG,TRACE these are three type and Info is default in robot framework
+'''
+
 #if you want to run in parallel we can use Pabot package
 pip install -U robotframework-pabot
 
