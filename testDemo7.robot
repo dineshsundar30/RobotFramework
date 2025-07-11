@@ -16,7 +16,7 @@ Play around with Dictinoary
     log     ${data}[name]
     ${url}=     Get From Dictionary     ${data}     website
     log   ${url}
-
+    #Set To Dictionary    ${USER}    email=gokul@example.com   --> to add values into dictionary
 
 Add Book into Library DataBase
         [Tags]      API
