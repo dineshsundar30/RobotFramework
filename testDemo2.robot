@@ -101,7 +101,11 @@ Fill the Login Details and Login Form
 ... execute javascript window.scrollTo(0,-document.body.scrollHeight)            #starting point
 
 
-
+[Documentation]   Dismiss an Alert
+... Handle Alert    action=DISMISS
+... Or
+... Alert Should Be Present
+... Dismiss Alert
 
 
 
