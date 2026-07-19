@@ -1,0 +1,53 @@
+------------Importent Commands---------------------
+appium -v  --> to check the Version
+adb devices   --> to list the connected mobile device's
+appium  --> this will give some info like appium is running port the default port is 4723 
+appium  --port 4725   --> this is to change appium port 
+emulator -list-avds   --> to litsdown the installed emulator list 
+emulator -avd Pixel	  --> this will directly help to open our device without openiing a android studio
+
+To find the app package and activity 
+first open the app on emulator and run below commends
+1. adb shell
+2. dumpsys activity activities | grep mResumedActivity  
+O/P - mResumedActivity: ActivityRecord{b54c0c2 u0 com.google.android.deskclock/com.android.deskclock.DeskClock t244}
+                                                      package_name                package_activity
+-------------------------------------------------------
+To inspect the Mobile if it's connected throught USB you can also type below cmd in your chrome and inspect in lap
+chrome://inspect/#devices
+
+The Appium Inspector Capabilities
+
+{
+  "platformName": "Android",
+  "automationName": "UiAutomator2",
+  "deviceName": "emulator-5554",
+  "appPackage": "com.android.contacts",
+  "appActivity": "com.android.contacts.activities.PeopleActivity"
+}
+
+----------------------------------------------------------------------------------------------------
+To Open and test with diffrent emulators
+
+Step 1 - start the emulators in the sceperate port 
+emulator -avd Pixel -port 5554
+emulator -avd Medium_Phone_API_36.0 -port 5556
+
+Step 2 - Opening the appium
+appium --port 4723 --default-capabilities '{\"appium:udid\":\"emulator-5554\",\"appium:systemPort\":8200,\"appium:automationName\":\"UiAutomator2\"}'
+appium --port 4725 --default-capabilities '{\"appium:udid\":\"emulator-5556\",\"appium:systemPort\":8202,\"appium:automationName\":\"UiAutomator2\"}'
+
+_____________________________________________________________________________________________
+To connect your mobile remotly
+
+adb start-server
+adb devices    --to verify a connecting (connect your mobile using USB) 
+adb tcpip 5555  --macking a connecting ( the mobile and laptop should be connected on same wifi) 
+adb connect wifi_ip:5555   --to create a wifi connecting
+adb devices     -- to verify a newtwork ip connecting is made or not you should see wifi_ip:5555
+now we can disconnect a usb cable
+
+
+
+----------------------------------------------------------------------------------------------------
+ robot -d Output --loglevel Trace Test/Appiumtest.robot   --> basic run

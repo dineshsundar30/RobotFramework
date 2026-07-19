@@ -1,0 +1,22 @@
+ADB basic Commabds
+
+adb devices --> to list the connected devices
+adb install <path>  --> this will install the application mentioned in the path
+adb -s <device_serial> install <path>  -->  let's say you have more then one device means you can specify the device serial and intsall
+adb shell cmd package list packages    --> to list the all package name
+adb shell cmd package list packages -i package_name   --> to search the package for particular app
+adb uninstall <package_name>	--> to uninstall the application
+adb shell screencap -p /sdcard/screenshot.png	--> to take the screenshot 
+adb shell screenrecord /sdcard/samplerecord.mp4  -->  to record the screen to stop the recording ctrl+C
+adb push Source_path Destination_path  --> to move the file pc to mobile
+adb pull fileSource_path Destination_path -->  mobile to pc 
+adb install -r <package_path>	--> same like install the app but mainly used to update the package 
+adb logcat -d > <path_to_save_file/log.txt>  --> to generate a log to developer to debug and we can change the -e,-w if needed 
+adb bugreport >  <path_to_save_file/bugreport>	--> same like logcat but it will dump the whole device information like dumpstate, dumpsys and logcat outputs
+adb shell --> it will initiate an adb server
+adb kill-server -->  to kill the adb server 
+adb shell monkey -p <package> -v 500 --> to simulate 500 user for performance test
+
+
+adb repo link
+https://github.com/balramrexwal/adb
